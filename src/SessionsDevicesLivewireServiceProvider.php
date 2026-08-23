@@ -12,7 +12,6 @@ final class SessionsDevicesLivewireServiceProvider extends ServiceProvider
     public function boot(): void
     {
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'sessions-devices-livewire');
-        Livewire\Livewire::component('sessions-devices-livewire-overview', Liberu\Foundation\SessionsDevicesLivewire\Livewire\Overview::class);
+        Livewire::component('sessions-devices-livewire-overview', Liberu\Foundation\SessionsDevicesLivewire\Livewire\Overview::class);
     }
 }
-
